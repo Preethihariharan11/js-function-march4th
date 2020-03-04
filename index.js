@@ -71,11 +71,32 @@ function mark(x){
 }
 grade=mark(99)
 console.log(grade)
-
 //--------------------------------------------------------------------
-let text =['a','e','i','0','u']
-let lettr=''
-let i;
-for (i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+function vowel(charc)
+{
+  if(charc=='a'|| charc=='e' || charc=='i' ||  charc=='o'||  charc=='u')
+  {
+    return "Vowel!";
+  }
+ else{
+   return "Not a vowel";
+ }
 }
+let res11=vowel('p');
+console.log(res11);
+//return not a Vowel
+//finds whether the given num is a prime number
+function prime(numb){
+  let i;
+  for(i=2;i<=numb-1;i++){
+  if(numb%i==0)
+  {
+    return "Not prime";
+  }
+  else{
+    return "prime";
+  }
+}}
+let res12=prime(17);
+console.log(res12)
+//output is prime (17)
